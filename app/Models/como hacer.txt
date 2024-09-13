@@ -5,3 +5,4 @@ pais muchos participantes
 participantes uno disciplinas ^ uno eventos ^ muchos medallas
 
 tipo de relaciones
+prueba se canvio 
