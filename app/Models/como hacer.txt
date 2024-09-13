@@ -1,0 +1,7 @@
+- disciplinas muchos participantes
+- eventos muchos participantes ^ muchos medallas ^ disciplinas
+- medallas uno eventos ^ muchos participantes
+pais muchos participantes
+participantes uno disciplinas ^ uno eventos ^ muchos medallas
+
+tipo de relaciones
