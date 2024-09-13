@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('participantes', function (Blueprint $table) {
+        Schema::create('medallas', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-            $table->foreign('id_pais')->references('id')->on('pais');
-            $table->foreign('id_medallas')->references('id')->on('medallas');
-            $table->foreign('id_disciplinas')->references('id')->on('disciplinas');
+            $table->string('tipo');
+            $table->unsignedBigInteger('id_eventos');
             $table->foreign('id_eventos')->references('id')->on('eventos');
-            $table->varchar('nombre');
+            $table->timestamps();
         });
     }
 
@@ -27,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('participantes');
+        Schema::dropIfExists('medallas');
     }
 };
