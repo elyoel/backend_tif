@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('pais', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre de pais');
+            $table->string('nombre_de_pais');
             $table->string('region');  
             $table->timestamps();
         });        

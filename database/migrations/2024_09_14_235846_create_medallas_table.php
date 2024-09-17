@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('medallas', function (Blueprint $table) {
             $table->id();
-            $table->string('tipo de medalla');
+            $table->string('tipo_de_medalla');
             $table->unsignedBigInteger('id_eventos');
             $table->foreign('id_eventos')->references('id')->on('eventos');
             $table->timestamps();

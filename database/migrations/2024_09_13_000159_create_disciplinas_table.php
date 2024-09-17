@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('id_eventos');
             $table->foreign('id_eventos')->references('id')->on('eventos');
-            $table->string('nombre disciplinas');
-            $table->string('tipo de disciplinas');
+            $table->string('nombre_disciplinas');
+            $table->string('tipo_de_disciplinas');
             $table->timestamps();
         });
     }
