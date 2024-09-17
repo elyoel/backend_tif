@@ -12,6 +12,8 @@ class Medallas extends Model
 {
     use HasFactory;
 
+    protected $table = 'medallas';
+
     public function eventos(){
         return $this->belongsTo(Eventos::class, 'id_eventos');
     }

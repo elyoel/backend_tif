@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('eventos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre_evento');
-            $table->date('fecha');
+            $table->string('nombre evento');
+            $table->date('fecha del evento');
             $table->timestamps();
         });
     }

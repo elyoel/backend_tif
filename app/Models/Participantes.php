@@ -14,6 +14,8 @@ class Participantes extends Model
 {
     use HasFactory;
 
+    protected $table = 'participantes';
+
     public function disciplinas(){
         return $this->belongsTo(Disciplinas::class, 'id_disciplinas');
     }

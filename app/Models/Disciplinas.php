@@ -12,6 +12,8 @@ class Disciplinas extends Model
 {
     use HasFactory;
 
+    protected $table = 'disciplinas';
+
     public function participantes(){
         return $this->hasMany(Participantes::class, 'id');
     }

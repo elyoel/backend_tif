@@ -11,6 +11,8 @@ class Pais extends Model
 {
     use HasFactory;
 
+    protected $table = 'pais';
+
     public function participantes(){
         return $this->hasMany(Participantes::class, 'id');
     }
