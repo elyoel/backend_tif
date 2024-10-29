@@ -20,4 +20,12 @@ class Medallas extends Model
     public function participantes(){
         return $this->hasMany(Participantes::class, 'id');
     }
+
+
+    public function setTipoMedallas(){
+        return "{$this->tipo}";
+    }
+    public function getTipoDeMella(){
+        return "{$this->tipo}";
+    }
 }

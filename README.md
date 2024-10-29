@@ -11,3 +11,4 @@ php artisan migrate
 
 Para abrir el servidor ejecutar:
 php artisan serve
+

@@ -93,7 +93,7 @@
                                             <h2 class="text-xl font-semibold text-black dark:text-white"> Titulo de Ejemplo </h2>
 
                                             <p class="mt-4 text-sm/relaxed">
-                                                alex se cago todo
+                                                Prueba laravel 
                                             </p>
                                         </div>
                                     </div>

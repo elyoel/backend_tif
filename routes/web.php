@@ -29,6 +29,6 @@ Route::get('/prueba', function(){
     $dis1->tipo_de_disciplinas = 'natacion';
     $dis1->save();
     */
-
+    
     return $dis1 = Disciplinas::get('id_eventos');
 });
