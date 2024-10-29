@@ -1,4 +1,4 @@
-Ejecutar:
+Ejecutar en consola:
 composer install
 
 verificar puerto de la base de datos (3306 o 3307)
