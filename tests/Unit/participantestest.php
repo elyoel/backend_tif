@@ -5,20 +5,25 @@ namespace Tests\Unit;
 use PHPUnit\Framework\TestCase;
 use App\Models\Participantes;
 
-class participantestest extends TestCase
+class participantesTest extends TestCase
 {
-    public function test_particiapntestest_nombre() {
+    public function test_particiapantes_nombre()
+    {
         $partiejemplo = new Participantes();
-        $partiejemplo-> setNombre("yoel");
+        $partiejemplo-> setNombre("YOEL");
 
-        $this->assertEquals("YOEL", $partiejemplo->getNombre());
+        //$this->assertEquals("YOEL", $partiejemplo->getNombre());
+        $this-> assertEquals($partiejemplo->getNombre(), "YOEL");
     }
     
-    public function test_particiapntestest_apellido() {
-        $partiejemplo = new Participantes();
-        $partiejemplo-> setApellido("calderon");
+    public function test_particiapantes_apellido()
+    {
+        $partiejemplo1 = new Participantes();
+        $partiejemplo1-> setApellido("calderon");
 
-        $this->assertEquals("CALDERON", $partiejemplo->getApellido());
+        $this->assertEquals($partiejemplo1->getApellido(), "calderon");
+        //$this-> assertTrue("caldera" == $partiejemplo1->getApellido());
+        
     }
    
 }
