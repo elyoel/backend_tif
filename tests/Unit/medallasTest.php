@@ -14,22 +14,22 @@ class medallasTest extends TestCase
     {
         $medallastest1 = new Medallas();
 
-        $medallastest1->setTipo_de_Medallas(1);
+        $medallastest1->setTipoDeMedallas(1);
 
-        $this->assertEquals("Oro",$medallastest1->get('tipo_de_medallas'));
+        $this->assertEquals("Oro",$medallastest1->getTipoDeMedallas());
     }
     public function test_obtenerMedallaDePlata()
     {
         $medallastest2= new Medallas();
-        $medallastest2->setTipo_de_Medallas(2);
+        $medallastest2->setTipoDeMedallas(2);
 
-        $this->assertEquals("Plata",$medallastest2->getTipo_de_Medallas());
+        $this->assertEquals("Plata",$medallastest2->getTipoDeMedallas());
     }
-    public function test_obtenerMedallaDeBronze()
+    public function testobtenerMedallaDeBronze()
     {
         $medallastest3 = new Medallas();
-        $medallastest3 ->setTipo_de_Medallas(3);
+        $medallastest3 ->setTipoDeMedallas(3);
 
-        $this->assertEquals("Bronze",$medallastest3->getTipo_de_Medallas());
+        $this->assertEquals("Bronze",$medallastest3->getTipoDeMedallas());
     }
 }
