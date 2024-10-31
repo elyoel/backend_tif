@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('participantes', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->string('apellido');
             $table->integer('edad');
 
             $table->unsignedBigInteger('id_eventos');

@@ -9,11 +9,11 @@ class participantesTest extends TestCase
 {
     public function test_particiapantes_nombre()
     {
-        $partiejemplo = new Participantes();
-        $partiejemplo-> setNombre("YOEL");
+        $partiejemplo = new Participantes('YOEL', 'Calderon', 18);
+        //$partiejemplo-> setNombre("YOEL");
 
         //$this->assertEquals("YOEL", $partiejemplo->getNombre());
-        $this-> assertEquals($partiejemplo->getNombre(), "YOEL");
+        $this-> assertEquals($partiejemplo->nombre, "YOEL");
     }
     
     public function test_particiapantes_apellido()
