@@ -13,7 +13,17 @@ class Pais extends Model
 
     protected $table = 'pais';
 
+    public function __construct(
+        public string $nombre_pais,
+        public string $region
+    ){
+    }
+    
     public function participantes(){
         return $this->hasMany(Participantes::class, 'id');
+    }
+
+    public function getNombre(){
+        return "{$this->nombre_pais}";
     }
 }

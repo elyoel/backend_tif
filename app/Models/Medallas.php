@@ -13,6 +13,11 @@ class Medallas extends Model
     use HasFactory;
 
     protected $table = 'medallas';
+    public function __construct(
+        public string $tipo_de_medallas,       
+        public int $id_evento
+    ){
+    }
 
     public function eventos(){
         return $this->belongsTo(Eventos::class, 'id_eventos');

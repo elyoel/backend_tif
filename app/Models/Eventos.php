@@ -14,6 +14,12 @@ class Eventos extends Model
     use HasFactory;
 
     protected $table = 'eventos';
+    public function __construct(
+        public int $id_evento,
+        public string $nombre_evento,
+        public $fecha_del_evento      
+    ){
+    }
 
     public function participantes(){
         return $this->belongsTo(Participantes::class, 'id_participantes');
