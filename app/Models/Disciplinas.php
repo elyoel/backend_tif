@@ -13,6 +13,12 @@ class Disciplinas extends Model
     use HasFactory;
 
     protected $table = 'disciplinas';
+    protected $fillable = ['id_eventos', 'nombre_disciplinas', 'tipo_de_disiplinas'];
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+    }
+
 
     public function participantes(){
         return $this->hasMany(Participantes::class, 'id');

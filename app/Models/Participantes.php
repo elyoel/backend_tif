@@ -15,13 +15,12 @@ class Participantes extends Model
     use HasFactory;
 
     protected $table = 'participantes';
-    
-    public function __construct(
-        public string $nombre,
-        public string $apellido,
-        public int $edad
-    ){
+    protected $fillable = ['nombre', 'apellido', 'edad', 'id_eventos','id_pais', 'id_medallas', 'id_disciplinas'];
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
     }
+    
     public function disciplinas(){
         return $this->belongsTo(Disciplinas::class, 'id_disciplinas');
     }
