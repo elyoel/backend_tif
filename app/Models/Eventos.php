@@ -23,8 +23,8 @@ class Eventos extends Model
     public function participantes(){
         return $this->belongsTo(Participantes::class, 'id_participantes');
     }
-    public function Eventos(){
-        return $this->belongsTo(Medallas::class, 'id_eventos');
+    public function medallas(){
+        return $this->hasMany(Medallas::class, 'id');
     }
     public function disciplinas(){
         return $this->hasMany(Disciplinas::class, 'id');
