@@ -35,7 +35,7 @@ class Medallas extends Model
         return "{$this->tipo_de_medalla}";
     }
     public function getId_evento(){
-        return $this->id_evento;
+        return $this->id_eventos;
     }
     public function setTipoDeMedallas($puesto){
         if($puesto==1){

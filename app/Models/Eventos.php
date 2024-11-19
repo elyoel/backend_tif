@@ -14,7 +14,7 @@ class Eventos extends Model
     use HasFactory;
 
     protected $table = 'eventos';
-    protected $fillable = ['nombre_evento', 'fecha_del_evento'];
+    protected $fillable = ['id', 'nombre_evento', 'fecha_del_evento'];
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
