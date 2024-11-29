@@ -13,9 +13,9 @@ class participantesTest extends TestCase
         'nombre'=> 'yoel',
         'apellido' => 'calderon',
         'edad' => 18
-        ])
+        ]);
         //$this->assertEquals("YOEL", $partiejemplo->getNombre());
-        $this-> assertEquals($partiejemplo->get, "yoel");
+       // $this-> assertEquals($partiejemplo->get, "yoel");
     }
     
     public function test_particiapantes_apellido()

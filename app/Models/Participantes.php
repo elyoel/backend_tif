@@ -35,18 +35,4 @@ class Participantes extends Model
     public function pais(){
         return $this->belongsTo(Pais::class, 'id_pais');
     }
-
-
-    public function setNombre($nombre){
-        return $this->nombre = $nombre;
-    }
-    public function getNombre(){
-        return "{$this->nombre}";
-    }
-    public function setApellido($apellido){
-        return $this->apellido = $apellido;
-    }
-    public function getApellido(){
-        return "{$this->apellido}";
-    }
 }

@@ -15,11 +15,12 @@ class medallasTest extends TestCase
     {
         $evento1 = new Eventos([
             'nombre_de_evento' => 'Natacion Event',
-            'fecha_del_evento' => '2022-22-22'
+            'fecha_del_evento' => '2022-22-22',
+            'id_evento '=> 'id'
         ]);
         $medallastest1 = new Medallas([
             'tipo_de_medalla' => 'ORO',
-            '1'
+            'id_evento' => 'id'
         ]);
 
         $this->assertEquals($medallastest1->getTipoDeMedallas(), "ORO");
