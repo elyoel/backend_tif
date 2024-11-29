@@ -14,13 +14,18 @@ class medallasTest extends TestCase
     public function test_obtenerMedallaDeOro()
     {
         $evento1 = new Eventos([
+            'id'=> 1,
             'nombre_de_evento' => 'Natacion Event',
             'fecha_del_evento' => '2022-22-22',
             'id_evento '=> 'id'
         ]);
         $medallastest1 = new Medallas([
             'tipo_de_medalla' => 'ORO',
+<<<<<<< HEAD
             'id_evento' => 'id'
+=======
+            'id_eventos' => $evento1->id
+>>>>>>> 97fc589fd250be903f239ff875aaffe01910bd94
         ]);
 
         $this->assertEquals($medallastest1->getTipoDeMedallas(), "ORO");
@@ -28,12 +33,13 @@ class medallasTest extends TestCase
     public function test_obtenerIdEvento()
     {
         $evento1 = new Eventos([
+            'id'=> 1,
             'nombre_de_evento' => 'Natacion Event',
             'fecha_del_evento' => '2022-22-22'
         ]);
         $medalla= new Medallas([
             'tipo_de_medalla' => 'ORO',
-            '1'
+            'id_eventos' => $evento1->id
         ]);
 
         $this->assertEquals($medalla->getId_evento(), 2);
