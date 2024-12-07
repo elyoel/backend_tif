@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre_de_pais');
             $table->string('region');  
-            //$table->timestamps();
+            $table->timestamps();
         });        
     } 
 
