@@ -13,7 +13,7 @@ use App\Models\Pais;
 class Participantes extends Model
 {
     use HasFactory;
-
+    public $timestamps = false;
     protected $table = 'participantes';
     protected $fillable = ['nombre', 'apellido', 'edad', 'id_eventos','id_pais', 'id_medallas', 'id_disciplinas'];
     public function __construct(array $attributes = [])

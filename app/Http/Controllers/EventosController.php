@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Eventos;
-use App\Models\Pais;
 use Illuminate\Http\Request;
 
 class EventosController extends Controller

@@ -11,7 +11,7 @@ use App\Models\Eventos;
 class Medallas extends Model
 {
     use HasFactory;
-
+    public $timestamps = false;
     protected $table = 'medallas';
     protected $fillable = ['tipo_de_medalla', 'id_eventos'];
     public function __construct(array $attributes = [])

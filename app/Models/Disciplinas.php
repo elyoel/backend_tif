@@ -11,7 +11,7 @@ use App\Models\Eventos;
 class Disciplinas extends Model
 {
     use HasFactory;
-
+    public $timestamps = false;
     protected $table = 'disciplinas';
     protected $fillable = ['id_eventos', 'nombre_disciplinas', 'tipo_de_disiplinas'];
     public function __construct(array $attributes = [])

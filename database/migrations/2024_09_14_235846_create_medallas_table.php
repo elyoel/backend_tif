@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('tipo_de_medalla');
             $table->unsignedBigInteger('id_eventos');
             $table->foreign('id_eventos')->references('id')->on('eventos');
-            $table->timestamps();
         });
     }
 

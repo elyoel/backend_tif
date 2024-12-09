@@ -25,7 +25,6 @@ return new class extends Migration
             $table->foreign('id_medallas')->references('id')->on('medallas');
             $table->foreign('id_disciplinas')->references('id')->on('disciplinas');
             $table->foreign('id_eventos')->references('id')->on('eventos');
-            $table->timestamps();
         });
     }
 

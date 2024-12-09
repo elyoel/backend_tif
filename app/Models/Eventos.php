@@ -12,7 +12,7 @@ use App\Models\Medallas;
 class Eventos extends Model
 {
     use HasFactory;
-
+    public $timestamps = false;
     protected $table = 'eventos';
     protected $fillable = ['nombre_evento', 'fecha_del_evento'];
     public function __construct(array $attributes = [])

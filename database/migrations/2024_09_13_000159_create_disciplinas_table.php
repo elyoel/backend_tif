@@ -17,7 +17,6 @@ return new class extends Migration
             $table->foreign('id_eventos')->references('id')->on('eventos');
             $table->string('nombre_disciplinas');
             $table->string('tipo_de_disciplinas');
-            $table->timestamps();
         });
     }
 

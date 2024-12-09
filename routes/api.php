@@ -16,7 +16,7 @@ use App\Http\Controllers\MedallasController;
 Route::get('pais', [PaisController::class, 'index']);
 Route::get('pais/{id}', [PaisController::class, 'show']);
 Route::post('pais', [PaisController::class, 'store']);
-Route::put('pais', [PaisController::class, 'update']);
+Route::put('pais/{id}', [PaisController::class, 'update']);
 Route::delete('pais/{id}', [PaisController::class, 'destroy']);
 
 // Rutas para Participantes
