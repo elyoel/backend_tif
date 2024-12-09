@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('nombre_evento');
             $table->date('fecha_del_evento');
-            //$table->timestamps();
         });
     }
 
