@@ -55,7 +55,7 @@ class DisciplinasController extends Controller
         $disciplina = Disciplinas::findOrFail($id);
         $disciplina->id_eventos = $request->id_eventos;
         $disciplina->nombre_disciplinas = $request->nombre_disciplinas;
-        $disciplina->tipo_de_disciplinas = $request->tipo_de_discipliinas;
+        $disciplina->tipo_de_disciplinas = $request->tipo_de_disciplinas;
         $disciplina->update();
         return $disciplina;
     }
