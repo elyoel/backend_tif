@@ -23,6 +23,6 @@ class Medallas extends Model
         return $this->belongsTo(Eventos::class, 'id_eventos');
     }
     public function participantes(){
-        return $this->hasMany(Participantes::class, 'id');
+        return $this->belongsToMany(Participantes::class);
     }
 }

@@ -29,10 +29,16 @@ class Participantes extends Model
         return $this->belongsTo(Eventos::class, 'id_eventos');
     }
     
-    public function medallas(){
+    /*public function medallas(){
         return $this->belongsTo(Medallas::class, 'id_medallas');
     }
+    */
     public function pais(){
         return $this->belongsTo(Pais::class, 'id_pais');
     }
+
+    public function medallas(){
+        return $this->belongsToMany(Medallas::class);
+    }
+
 }

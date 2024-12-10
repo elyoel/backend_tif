@@ -7,7 +7,7 @@ use App\Http\Controllers\EventosController;
 use App\Http\Controllers\ParticipantesController;
 use App\Http\Controllers\DisciplinasController;
 use App\Http\Controllers\MedallasController;
-
+use App\Models\Participante_Medalla;
 
 //Auth::routes();
 //Route::resource('pais', 'PaisController');
@@ -47,3 +47,10 @@ Route::get('medallas/{id}', [MedallasController::class, 'show']);
 Route::post('medallas', [MedallasController::class, 'store']);
 Route::put('medallas/{id}', [MedallasController::class, 'update']);
 Route::delete('medallas/{id}', [MedallasController::class, 'destroy']);
+
+//Rutas para ParticipantesMedalla
+Route::get('participante_medalla', [Participante_Medalla::class, 'index']);
+Route::get('participante_medalla/{id}', [Participante_Medalla::class, 'show']);
+Route::post('participante_medalla', [Participante_Medalla::class, 'store']);
+Route::put('participante_medalla/{id}', [Participante_Medalla::class, 'update']);
+Route::delete('participante_medalla/{id}', [Participante_Medalla::class, 'destroy']);

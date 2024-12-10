@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Participantes;
+use App\Models\Participante_Medalla;
 use Illuminate\Http\Request;
 
-class ParticipantesController extends Controller
+class ParticipanteMedallaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return Participantes::all();
+        return Participante_Medalla::all();
     }
 
     /**
@@ -28,7 +28,7 @@ class ParticipantesController extends Controller
      */
     public function store(Request $request)
     {
-        return  Participantes::create($request->all());
+        return  Participante_Medalla::create($request->all());
     }
 
     /**
@@ -36,7 +36,7 @@ class ParticipantesController extends Controller
      */
     public function show(string $id)
     {
-        return Participantes::findOrFail($id);
+        return Participante_Medalla::findOrFail($id);
     }
 
     /**
@@ -52,13 +52,9 @@ class ParticipantesController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $participante = Participantes::findOrFail($id);
-        $participante->nombre = $request->nombre;
-        $participante->apellido = $request->apellido;
-        $participante->edad = $request->edad;
-        $participante->id_eventos = $request->id_eventos;
-        $participante->id_pais = $request->id_pais;
-        $participante->id_disciplinas = $request->id_disciplinas;
+        $participante = Participante_Medalla::findOrFail($id);
+        $participante->id_participantes = $request->id_participantes;
+        $participante->id_medallas = $request->id_medallas;
     }
 
     /**
@@ -66,7 +62,7 @@ class ParticipantesController extends Controller
      */
     public function destroy(string $id)
     {
-        $participante = Participantes::findOrFail($id);
+        $participante = Participante_Medalla::findOrFail($id);
         $participante->delete();
     }
 }
